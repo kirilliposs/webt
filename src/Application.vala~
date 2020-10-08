@@ -1,6 +1,6 @@
 
-public class webt : Gtk.Application {
-    public webt () {
+public class MyApp : Gtk.Application {
+    public MyApp () {
         Object (
             application_id: "com.github.kirilliposs.webt",
             flags: ApplicationFlags.FLAGS_NONE
@@ -17,6 +17,6 @@ public class webt : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        return new webt ().run (args);
+        return new MyApp ().run (args);
     }
 }
